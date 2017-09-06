@@ -15,7 +15,6 @@
       "email": "Guja1501@gmail.com"
     }
   ],
-  "minimum-stability": "stable",
   "require": {
     "php": ">=7.0",
     "php-curl-class/php-curl-class": "^7.3",
@@ -32,5 +31,6 @@
       "providers": "Rangoo\\Pcdn\\RangooPcdnServiceProvider"
     }
   },
-  "prefer-stable": true
+  "minimum-stability": "stable",
+  "prefer-stable": false
 }
