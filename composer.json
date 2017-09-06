@@ -1,0 +1,36 @@
+{
+  "name": "rangoo/pcdn",
+  "description": "A private content delivery network. Downloads password protected packages from websites like pcdn.rangoo.ge",
+  "keywords": [ "laravel", "pcdn" ],
+  "license": "MIT",
+  "version": "0.1.0-alpha",
+  "type": "library",
+  "homepage": "https://github.com/guja1501/pcdn",
+  "support": {
+    "issues": "https://github.com/guja1501/pcdn/issues",
+    "source": "https://github.com/guja1501/pcdn"
+  },
+  "authors": [
+    {
+      "name": "Guja Babunashvili",
+      "email": "Guja1501@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0",
+    "php-curl-class/php-curl-class": "^7.3",
+    "symfony/console": "^3.3",
+    "laravel/framework": "^5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rangoo\\Pcdn\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": "Rangoo\\Pcdn\\RangooPcdnServiceProvider"
+    }
+  }
+}
