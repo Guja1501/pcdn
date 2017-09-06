@@ -3,7 +3,6 @@
   "description": "A private content delivery network. Downloads password protected packages from websites like pcdn.rangoo.ge",
   "keywords": [ "laravel", "pcdn" ],
   "license": "MIT",
-  "version": "0.1.0-alpha",
   "type": "library",
   "homepage": "https://github.com/guja1501/pcdn",
   "support": {
