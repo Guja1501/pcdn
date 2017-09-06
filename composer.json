@@ -31,5 +31,6 @@
     "laravel": {
       "providers": "Rangoo\\Pcdn\\RangooPcdnServiceProvider"
     }
-  }
+  },
+  "prefer-stable": true
 }
