@@ -31,6 +31,9 @@
       "providers": "Rangoo\\Pcdn\\RangooPcdnServiceProvider"
     }
   },
+  "scripts": {
+    "post-package-install": "@php artisan require:material-admin"
+  },
   "minimum-stability": "dev",
   "prefer-stable": true
 }
