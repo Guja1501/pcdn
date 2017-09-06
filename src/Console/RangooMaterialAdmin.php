@@ -7,9 +7,6 @@ use Illuminate\Console\Command;
 use Symfony\Component\Process\Process;
 
 class RangooMaterialAdmin extends Command {
-
-	static private $domain = 'http://pcdn.rangoo.ge';
-
 	/**
 	 * pcdn zip file url
 	 *
