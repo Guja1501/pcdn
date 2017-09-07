@@ -100,9 +100,24 @@ class RangooMaterialAdmin extends Command {
 	 */
 	private function getUser() {
 		return (object)[
-			'username' => $this->option('username') ?: env('PCDN_USERNAME', ''),
-			'password' => $this->option('password') ?: env('PCDN_PASSWORD', '')
+			'username' => $this->option('username') ?: env('PCDN_USERNAME', null) ?? readline('Username: '),
+			'password' => $this->option('password') ?: env('PCDN_PASSWORD', null) ?? $this->readPassword('Password')
 		];
+	}
+
+	private function readPassword($prefix) {
+		echo $prefix;
+
+		$oldStyle = shell_exec('stty -g');
+
+		shell_exec('stty -echo');
+		$password = rtrim(fgets(STDIN), "\n");
+
+		shell_exec('stty ' . $oldStyle);
+
+		echo "\n";
+
+		return $password;
 	}
 
 	private function download($user) {
